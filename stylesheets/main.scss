@@ -1,0 +1,198 @@
+// allows for mixins
+@import 'Hipster_framework';
+
+
+// simple body style for this page
+body {
+  @include OSC-font;
+  font-weight: 100;
+  margin: 1%;
+  & span {
+    color: #FF2E00;
+    font-size: 16px;
+  }
+
+  & h1 {
+    font-size: 48px;
+    margin: 0 auto;
+  }
+  & p {
+    font-size: 18px;
+
+  }
+
+}
+
+.button_display {
+  border: 1px solid #E5F0F2;
+  border-radius: 7px;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.maincontent {
+  float: right;
+  height: 555px;
+  width: 66%;
+  padding: 0 1%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  overflow: scroll;
+  border-radius: 5px;
+
+}
+
+.sidebar {
+  float: left;
+  height: 555px;
+  width: 29%;
+  padding: 1%;
+  background-color: #FF2E00 ;
+  border-radius: 5px;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  overflow: scroll;
+  & .VH {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    & h1 {
+      color: #FF2E00;
+      text-align: center;
+      padding-top: 18%;
+    }
+  }
+}
+
+
+
+.fonts1 {
+  @include OSC-font;
+  border: 1px solid #E5F0F2;
+  border-radius: 7px;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.fonts2 {
+  @include Raleway-font;
+  border: 1px solid #E5F0F2;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.fonts3 {
+  @include PoiretOne-font;
+  border: 1px solid #E5F0F2;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+
+
+
+// these are the base buttons 
+.sharp_button1 {
+  @include button(white);
+  color: black;
+}
+.sharp_button2 {
+  @include button(#DEEDEB);
+  color: black;
+}
+.sharp_button3 {
+  @include button(#FF2E00);
+  color: white;
+
+}
+.sharp_button4 {
+  @include button(#000000);
+  color: white;
+}
+
+
+// these are the pill shape add on buttons
+.pill_button1 {
+  @include button(white);
+  @include pill-button;
+  color: black;
+}
+.pill_button2 {
+  @include button(#DEEDEB);
+  @include pill-button;
+  color: black;
+}
+.pill_button3 {
+  @include button(#FF2E00);
+  @include pill-button;
+  color: white;
+}
+.pill_button4 {
+  @include button(#000000);
+  @include pill-button;
+  color: white;
+}
+
+
+// these are the glow hover effect pill buttons
+#glowy-things{
+  padding: 0;
+  li{
+    display: inline-block;
+    width: 75px;
+  }
+}
+.glow_button1 {
+  @include button(white);
+  @include pill-button;
+  @include glow-button;
+  color: black;
+}
+
+
+.glow_button2 {
+  @include button(#DEEDEB);
+  @include pill-button;
+  @include glow-button;
+  color: black;
+}
+
+.glow_button3 {
+  @include button(#FF2E00);
+  @include pill-button;
+  @include glow-button;
+  color: white;
+
+}
+
+.glow_button4 {
+  @include button(#000000);
+  @include pill-button;
+  @include glow-button;
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
